@@ -20,7 +20,7 @@ class User extends MY_Controller {
 		$this -> lv('user/add',$data);
 	}
 	public function addsub(){
-
+		$email = $this->input->post('email');
 		$post_arr =array(
 			'email' => $this->input->post('email'),
 			'role'  => 0

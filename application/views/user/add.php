@@ -41,7 +41,7 @@
 			<div class="col-xs-12">
 				<!-- PAGE CONTENT BEGINS -->
 
-				<form class="form-horizontal" role="form" action="<?=$post_url?>">
+				<form class="form-horizontal" role="form" action="<?=$post_url?>" method="post">
 					<div class="form-group">
 						<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> EMAIL </label>
 
