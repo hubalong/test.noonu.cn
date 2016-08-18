@@ -35,7 +35,7 @@ class MY_Controller extends CI_Controller {
 			$this->menu = [];
 		//echo $this->router->class;
 	}
-	public function lv($view,$data){
+	public function lv($view,$data=''){
 		
 		$this->load->view('public/header');
 	    $this->load->view('public/menu',['menu_function'=>$this->search_menu_fun]);
