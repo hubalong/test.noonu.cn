@@ -96,7 +96,7 @@
 </div><!-- /.main-content -->
 <script type="text/javascript">
 	$("#mysub").click(function(){
-		$(this).parents('from').submit();
+		$(this).parents('form').submit();
 	});
 
 </script>
