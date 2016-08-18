@@ -15,7 +15,21 @@ class User extends MY_Controller {
 		var_dump($list);
 	}
 	public function add(){
-		$post_arr = $this->input->post();	
+		$this -> lv('user/add');
+	}
+	public function add_ajax(){
+
+		$post_arr =array(
+			'email' => $this->input->post('email'),
+			'role'  => 0
+			);
+		$p = $this->input->post('password');
+		$this->load->helper('string');
+		$offset = random_string('alnum', 6);
+		$post_arr['password'] = md5($p.$offset);
+		$post_arr['offset'] = $offset;	
+		$this->db->insert('user',$post_arr);
+		
 		
 	}
 }

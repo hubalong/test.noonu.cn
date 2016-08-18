@@ -24,7 +24,8 @@ class MY_Controller extends CI_Controller {
 	}
 	private function get_active(){
 		$menu = array(
-				'home,index'=>array(1,0)
+				'home,index'=>[1,1],
+				"user,add" =>[2,1]
 			);
 		$class_name = $this->router->class;
 		$class_method = $this->router->method;
