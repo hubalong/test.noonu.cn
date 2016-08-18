@@ -32,6 +32,6 @@ class User extends MY_Controller {
 		$post_arr['offset'] = $offset;	
 		$this->db->insert('user',$post_arr);
 		$index_url = site_url('user/add');
-		$this->massage_error('用户名或者密码有误',$index_url);
+		$this->massage_error('添加成功点击链接再添加一个',$index_url);
 	}
 }
