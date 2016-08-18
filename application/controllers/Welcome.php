@@ -21,7 +21,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		echo $this->session->userdata('username');
-		$this->load->helper('url');
+		//$this->load->helper('url');
 		$post_url =  site_url('Welcome/login');
 		$data = array('post_url' => $post_url);
 		$this->load->view('public/login',$data);
@@ -41,12 +41,12 @@ class Welcome extends CI_Controller {
 			$this->session->set_userdata(array('username'=>$username,'haslogin'=>1));
 			echo $this->session->userdata('username');
 			
-			$this->load->helper('url');
+			//$this->load->helper('url');
 			$index_url = site_url('home/index');
 			header('Location: '.$index_url);
 			die;
 		}else{
-			$this->load->helper('url');
+			//$this->load->helper('url');
 			$index_url = site_url('Welcome/index');
 			$this->massage_error('用户名或者密码有误',$index_url);
 		}

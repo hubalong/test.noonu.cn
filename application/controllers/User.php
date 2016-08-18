@@ -15,9 +15,11 @@ class User extends MY_Controller {
 		var_dump($list);
 	}
 	public function add(){
-		$this -> lv('user/add');
+		$post_url =  site_url('user/addsub');
+		$data = array('post_url' => $post_url);
+		$this -> lv('user/add',$data);
 	}
-	public function add_ajax(){
+	public function addsub(){
 
 		$post_arr =array(
 			'email' => $this->input->post('email'),
@@ -29,7 +31,7 @@ class User extends MY_Controller {
 		$post_arr['password'] = md5($p.$offset);
 		$post_arr['offset'] = $offset;	
 		$this->db->insert('user',$post_arr);
-		
-		
+		$index_url = site_url('user/add');
+		$this->massage_error('用户名或者密码有误',$index_url);
 	}
 }
