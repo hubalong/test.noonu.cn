@@ -52,36 +52,7 @@
 			</a>
 		</div><!-- /.main-container -->
 
-		<!-- basic scripts -->
-
-
-		<!--[if !IE]> -->
-
-		<script type="text/javascript">
-			window.jQuery || document.write("<script src='<?=__PUBLIC__?>/js/jquery-2.0.3.min.js'>"+"<"+"script>");
-		</script>
-
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script type="text/javascript">
- window.jQuery || document.write("<script src='<?=__PUBLIC__?>/js/jquery-1.10.2.min.js'>"+"<"+"script>");
-</script>
-<![endif]-->
-
-		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='<?=__PUBLIC__?>/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
-		</script>
-		<script src="<?=__PUBLIC__?>/js/bootstrap.min.js"></script>
-		<script src="<?=__PUBLIC__?>/js/typeahead-bs2.min.js"></script>
-
 		
-		<!-- ace scripts -->
-
-		<script src="<?=__PUBLIC__?>/js/ace-elements.min.js"></script>
-		<script src="<?=__PUBLIC__?>/js/ace.min.js"></script>
-
-		<!-- inline scripts related to this page -->
 
 		
 </body>
