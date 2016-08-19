@@ -26,7 +26,17 @@ class Welcome extends CI_Controller {
 		$data = array('post_url' => $post_url);
 		$this->load->view('public/login',$data);
 	}
-	
+	public function test(){
+        $HTTP_HOST=$_SERVER[ "HTTP_HOST"];
+        echo $_SERVER[ "HTTP_HOST"];
+        //if($HTTP_HOST<>"www.baidu.com")
+        //{
+        //    header("location:http://www.baidu.com");
+        //}
+        echo json_encode($_SERVER);
+        echo '111';
+        die;
+    }
 	public function login(){
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
