@@ -11,7 +11,6 @@ class MY_Controller extends CI_Controller {
 			header("location:".site_url('welcome/index'));
 			die;
 		}
-		// ²Ëµ¥Ñ¡ÖĞ×´Ì¬
 		$this->get_active();
 
 		$obj_menu = $this->menu;

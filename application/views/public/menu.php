@@ -105,7 +105,7 @@
 
 							<ul class="submenu">
 								<li <?php $menu_function(2,1)?>>
-									<a href="faq.html">
+									<a href="/index.php/user/add">
 										<i class="icon-double-angle-right"></i>
 										添加用户
 									</a>
@@ -114,30 +114,11 @@
 								<li>
 									<a href="error-404.html">
 										<i class="icon-double-angle-right"></i>
-										404错误页面
+										用户管理
 									</a>
 								</li>
 
-								<li>
-									<a href="error-500.html">
-										<i class="icon-double-angle-right"></i>
-										500错误页面
-									</a>
-								</li>
-
-								<li>
-									<a href="grid.html">
-										<i class="icon-double-angle-right"></i>
-										网格
-									</a>
-								</li>
-
-								<li>
-									<a href="blank.html">
-										<i class="icon-double-angle-right"></i>
-										空白页面
-									</a>
-								</li>
+								
 							</ul>
 						</li>
 					</ul><!-- /.nav-list -->
